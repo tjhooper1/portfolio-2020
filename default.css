@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 
-body *{
+body * {
   transition: 0.3s;
 }
 
@@ -188,7 +188,7 @@ h6 {
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   border: 2px solid var(--themeDotBorder);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #light-mode {
@@ -306,7 +306,6 @@ h6 {
 
 .post {
   margin: 10px;
-  background-color: #fff;
   border: 1px solid var(--borderColor);
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
@@ -314,11 +313,16 @@ h6 {
 .thumbnail {
   width: 100%;
   object-fit: cover;
+  height: 320px;
 }
 
 .post-preview {
   background-color: #fff;
-  padding: 15px;
+  padding: 12px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .post-title {
@@ -354,7 +358,7 @@ h6 {
     flex-direction: column;
     align-items: center;
   }
-  .about-me{
+  .about-me {
     border-right: 0;
     border-bottom: 1px solid var(--borderColor);
   }
